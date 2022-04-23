@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=DM+Serif+Text&family=Lexend+Deca:wght@100;300&family=Zen+Antique&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Material+Icons"
+    />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <title>Hi, There!</title>
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a href="./home.html">Home</a>
+      <a class="active" href="./portfolio.html">Portfolio</a>
+      <a
+        href="https://drive.google.com/drive/folders/1FHdQ6WWVJ6cOJ3Hn0yRQ2sgutbnqJc9Q?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Certificates</a
+      >
+    </div>
+
+    <div class="all">
+      <button id="btnScrollTop" onclick="scrollToTop()">
+        <i class="material-icons">keyboard_double_arrow_up</i>
+      </button>
+      <h2 class="porto-h1">Portfolio</h2>
+      <br />
+      <div class="card2">
+        <p class="porto-title">Tic Tac Toe (Local App)</p>
+        <br />
+        <div class="row">
+          <div class="wrapper2">
+            <div class="column1">
+              <img
+                src="images/t3Home.PNG"
+                onclick="openModal();currentSlide(1)"
+                class="hover-shadow"
+                width="65%"
+                style="margin-left: 50%"
+              />
+            </div>
+            <div class="column1">
+              <img
+                src="images/t3Play.PNG"
+                onclick="openModal();currentSlide(2)"
+                class="hover-shadow"
+                width="62%"
+              />
+            </div>
+          </div>
+        </div>
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+            <div class="mySlides">
+              <div class="numbertext">1 / 2</div>
+              <img src="images/t3Home.PNG" style="width: 100%" />
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">2 / 2</div>
+              <img src="images/t3Play.PNG" style="width: 100%" />
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+            <div class="column1-2">
+              <img
+                class="demo cursor"
+                src="images/t3Home.PNG"
+                style="width: 50%"
+                onclick="currentSlide(1)"
+                alt="Home Page"
+              />
+            </div>
+            <div class="column1-2">
+              <img
+                class="demo cursor"
+                src="images/t3Play.PNG"
+                style="width: 50%"
+                onclick="currentSlide(2)"
+                alt="Game Page"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- </div>
+        </div> -->
+      </div>
+      <div class="card2">
+        <p class="porto-title">Simple Front-End App</p>
+        <br />
+        <div class="row">
+          <div class="wrapper1">
+            <div class="column2">
+              <img
+                src="images/eatezHome.JPG"
+                onclick="openModal2();currentSlide2(1)"
+                class="hover-shadow"
+                width="100%"
+              />
+            </div>
+            <div class="column2">
+              <img
+                src="images/eatezWelcome.JPG"
+                onclick="openModal2();currentSlide2(2)"
+                class="hover-shadow"
+                width="100%"
+              />
+            </div>
+            <div class="column2">
+              <img
+                src="images/eatezMenu.JPG"
+                onclick="openModal2();currentSlide2(3)"
+                class="hover-shadow"
+                width="100%"
+              />
+            </div>
+            <div class="column2">
+              <img
+                src="images/eatezProfile.JPG"
+                onclick="openModal2();currentSlide2(4)"
+                class="hover-shadow"
+                width="100%"
+              />
+            </div>
+            <div class="column2">
+              <img
+                src="images/eatezOrder.JPG"
+                onclick="openModal2();currentSlide2(5)"
+                class="hover-shadow"
+                width="100%"
+              />
+            </div>
+          </div>
+        </div>
+        <div id="myModal2" class="modal">
+          <span class="close cursor" onclick="closeModal2()">&times;</span>
+          <div class="modal-content">
+            <div class="mySlides2">
+              <div class="numbertext">1 / 5</div>
+              <img src="images/eatezHome.JPG" style="width: 100%" />
+            </div>
+            <div class="mySlides2">
+              <div class="numbertext">2 / 5</div>
+              <img src="images/eatezWelcome.JPG" style="width: 100%" />
+            </div>
+            <div class="mySlides2">
+              <div class="numbertext">3 / 5</div>
+              <img src="images/eatezMenu.JPG" style="width: 100%" />
+            </div>
+            <div class="mySlides2">
+              <div class="numbertext">4 / 5</div>
+              <img src="images/eatezProfile.JPG" style="width: 100%" />
+            </div>
+            <div class="mySlides2">
+              <div class="numbertext">5 / 5</div>
+              <img src="images/eatezOrder.JPG" style="width: 100%" />
+            </div>
+            <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+            <div class="caption-container">
+              <p id="caption2"></p>
+            </div>
+            <div class="column2-2">
+              <img
+                class="demo2 cursor"
+                src="images/eatezHome.JPG"
+                style="width: 75%"
+                onclick="currentSlide2(1)"
+                alt="Home Page"
+              />
+            </div>
+            <div class="column2-2">
+              <img
+                class="demo2 cursor"
+                src="images/eatezWelcome.JPG"
+                style="width: 75%"
+                onclick="currentSlide2(2)"
+                alt="Log In Page"
+              />
+            </div>
+            <div class="column2-2">
+              <img
+                class="demo2 cursor"
+                src="images/eatezMenu.JPG"
+                style="width: 75%"
+                onclick="currentSlide2(3)"
+                alt="Menu Page"
+              />
+            </div>
+            <div class="column2-2">
+              <img
+                class="demo2 cursor"
+                src="images/eatezProfile.JPG"
+                style="width: 75%"
+                onclick="currentSlide2(4)"
+                alt="Profile Page"
+              />
+            </div>
+            <div class="column2-2">
+              <img
+                class="demo2 cursor"
+                src="images/eatezOrder.JPG"
+                style="width: 75%"
+                onclick="currentSlide2(5)"
+                alt="Track Order"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <div class="card2">
+        <p class="porto-title">Simple Back-End App</p>
+        <br />
+        <div class="row">
+          <div class="wrapper2">
+            <div class="column3">
+              <img
+                src="images/companyEdit.jpg"
+                onclick="openModal3();currentSlide3(1)"
+                class="hover-shadow"
+                width="70%"
+              />
+            </div>
+            <div class="column3">
+              <img
+                src="images/companyAdd.jpg"
+                onclick="openModal3();currentSlide3(2)"
+                class="hover-shadow"
+                width="70%"
+              />
+            </div>
+            <div class="column3">
+              <img
+                src="images/companyOrder.jpg"
+                onclick="openModal3();currentSlide3(3)"
+                class="hover-shadow"
+                width="70%"
+              />
+            </div>
+            <div class="column3">
+              <img
+                src="images/companyLaporan.jpg"
+                onclick="openModal3();currentSlide3(4)"
+                class="hover-shadow"
+                width="70%"
+              />
+            </div>
+          </div>
+        </div>
+        <div id="myModal3" class="modal">
+          <span class="close cursor" onclick="closeModal3()">&times;</span>
+          <div class="modal-content">
+            <div class="mySlides3">
+              <div class="numbertext">1 / 4</div>
+              <img src="images/companyEdit.jpg" style="width: 100%" />
+            </div>
+            <div class="mySlides3">
+              <div class="numbertext">2 / 4</div>
+              <img src="images/companyAdd.jpg" style="width: 100%" />
+            </div>
+            <div class="mySlides3">
+              <div class="numbertext">3 / 4</div>
+              <img src="images/companyOrder.jpg" style="width: 100%" />
+            </div>
+            <div class="mySlides3">
+              <div class="numbertext">4 / 4</div>
+              <img src="images/companyLaporan.jpg" style="width: 100%" />
+            </div>
+            <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides3(1)">&#10095;</a>
+            <div class="caption-container">
+              <p id="caption3"></p>
+            </div>
+            <div class="column3-3">
+              <img
+                class="demo3 cursor"
+                src="images/companyEdit.jpg"
+                style="width: 75%"
+                onclick="currentSlide3(1)"
+                alt="Edit Menu"
+              />
+            </div>
+            <div class="column3-3">
+              <img
+                class="demo3 cursor"
+                src="images/companyAdd.jpg"
+                style="width: 75%"
+                onclick="currentSlide3(2)"
+                alt="Add Menu"
+              />
+            </div>
+            <div class="column3-3">
+              <img
+                class="demo3 cursor"
+                src="images/companyOrder.jpg"
+                style="width: 75%"
+                onclick="currentSlide3(3)"
+                alt="Order List"
+              />
+            </div>
+            <div class="column3-3">
+              <img
+                class="demo3 cursor"
+                src="images/companyLaporan.jpg"
+                style="width: 75%"
+                onclick="currentSlide3(4)"
+                alt="Company Report"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- </div>
+          </div>
+        </div> -->
+      </div>
+      <div class="card2">
+        <p class="porto-title">E-Commerce Website</p>
+        <br />
+        <div class="row">
+          <div class="wrapper4">
+            <div class="column4">
+              <img
+                src="images/websignin.png"
+                onclick="openModal4();currentSlide4(1)"
+                class="hover-shadow"
+                width="100%"
+              />
+            </div>
+            <div class="column4">
+              <img
+                src="images/webhome.png"
+                onclick="openModal4();currentSlide4(2)"
+                class="hover-shadow"
+                width="100%"
+              />
+            </div>
+            <div class="column4">
+              <img
+                src="images/webmenu.png"
+                onclick="openModal4();currentSlide4(3)"
+                class="hover-shadow"
+                width="100%"
+              />
+            </div>
+            <div class="column4">
+              <img
+                src="images/webdet.png"
+                onclick="openModal4();currentSlide4(4)"
+                class="hover-shadow"
+                width="100%"
+              />
+            </div>
+            <div class="column4">
+              <img
+                src="images/webco.png"
+                onclick="openModal4();currentSlide4(5)"
+                class="hover-shadow"
+                width="100%"
+              />
+            </div>
+            <div class="column4">
+              <img
+                src="images/webprofile.png"
+                onclick="openModal4();currentSlide4(6)"
+                class="hover-shadow"
+                width="100%"
+              />
+            </div>
+          </div>
+        </div>
+        <div id="myModal4" class="modal">
+          <span class="close cursor" onclick="closeModal4()">&times;</span>
+          <div class="modal-content">
+            <div class="mySlides4">
+              <div class="numbertext">
+                1 / 6
+                <div>
+                  <img src="images/websignin.png" style="width: 100%" />
+                </div>
+                <div class="mySlides4">
+                  <div class="numbertext">2 / 6</div>
+                  <img src="images/webhome.png" style="width: 100%" />
+                </div>
+                <div class="mySlides4">
+                  <div class="numbertext">3 / 6</div>
+                  <img src="images/webmenu.png" style="width: 100%" />
+                </div>
+                <div class="mySlides4">
+                  <div class="numbertext">4 / 6</div>
+                  <img src="images/webdet.png" style="width: 100%" />
+                </div>
+                <div class="mySlides4">
+                  <div class="numbertext">5 / 6</div>
+                  <img src="images/webco.png" style="width: 100%" />
+                </div>
+                <div class="mySlides4">
+                  <div class="numbertext">6 / 6</div>
+                  <img src="images/webprofile.png" style="width: 100%" />
+                </div>
+                <a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides4(1)">&#10095;</a>
+                <div class="caption-container">
+                  <p id="caption4"></p>
+                </div>
+                <div class="column4-4">
+                  <img
+                    class="demo4 cursor"
+                    src="images/websignin.png"
+                    style="width: 75%"
+                    onclick="currentSlide4(1)"
+                    alt="Sign Up Page"
+                  />
+                </div>
+                <div class="column4-4">
+                  <img
+                    class="demo4 cursor"
+                    src="images/webhome.png"
+                    style="width: 75%"
+                    onclick="currentSlide4(2)"
+                    alt="Home Page"
+                  />
+                </div>
+                <div class="column4-4">
+                  <img
+                    class="demo4 cursor"
+                    src="images/webmenu.png"
+                    style="width: 75%"
+                    onclick="currentSlide4(3)"
+                    alt="Menu List"
+                  />
+                </div>
+                <div class="column4-4">
+                  <img
+                    class="demo4 cursor"
+                    src="images/webdet.png"
+                    style="width: 75%"
+                    onclick="currentSlide4(4)"
+                    alt="Menu Detail"
+                  />
+                </div>
+                <div class="column4-4">
+                  <img
+                    class="demo4 cursor"
+                    src="images/webco.png"
+                    style="width: 75%"
+                    onclick="currentSlide4(5)"
+                    alt="Checkout Page"
+                  />
+                </div>
+                <div class="column4-4">
+                  <img
+                    class="demo4 cursor"
+                    src="images/webprofile.png"
+                    style="width: 75%"
+                    onclick="currentSlide4(6)"
+                    alt="Profile Page"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        </div>
+      </div>
+      <div class="card2">
+        <p class="porto-title">Company Widget (Warehouse & Report)</p>
+        <br />
+        <br />
+        <div class="row">
+          <div class="wrapper2">
+            <div class="column1">
+              <a
+                href="https://www.figma.com/file/19oIxCYDD4iMgiSNqdwtmo/SAD?node-id=0%3A1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="images/figma.PNG"
+                  class="hover-shadow"
+                  width="100%"
+                  style="margin-left: 62%"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- <center>
+          <a
+            href="https://www.figma.com/file/19oIxCYDD4iMgiSNqdwtmo/SAD?node-id=0%3A1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button class="reMoreBtn" id="btn" style="margin-bottom: 100px">
+              Figma Link
+            </button>
+          </a>
+        </center> -->
+      </div>
+    </div>
+
+    <br /><br /><br /><br />
+    <!-- <div class="footer">
+        <p>© 2021 by Shalomeira Valencia Winata</p>
+        <br/>
+    </div> -->
+    <div class="footer-home">
+      <div class="footer">
+        <p>© 2021 by Shalomeira Valencia Winata</p>
+        c
+        <br />
+      </div>
+    </div>
+  </body>
+</html>
